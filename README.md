@@ -23,7 +23,7 @@ Let's examine customer value closer. The SHAP values plot indicates that most of
 
 ![Customer Value Distribution](plots/customer_value.png)
 
-The majority of customers who churn are low value, confirming what's seen in the SHAP summary plot. There are a very small number of customers who are of higher value who churned through the complaint/call failure route. 
+The plots are individually normalized so don't compare the heights between yes and no churn, only with how they are spread out over customer value. The majority of customers who churn are low value, confirming what's seen in the SHAP summary plot. There are a very small number of customers who are of higher value who churned through the complaint/call failure route. 
 
 ## Conclusion and Suggested Next Steps
 The model catches 90% of those customers who will churn and 80% of those who are predicted to churn will churn. It is biased towards false positives rather than false negatives, which is acceptable for this task. We care much more about catching someone who might churn than trying to keep a customer who might have stayed with us anyway.
